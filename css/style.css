@@ -1,0 +1,136 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 16px;
+	font-family: "PT Sans Narrow", sans-serif;
+	background: black url('../img/body-bg.jpg') no-repeat 50% 0;
+}
+.header {
+	color: white;
+	background: black;
+}
+.header a:link,
+.header a:visited,
+.header a:hover,
+.header a:active {
+	color: white;
+}
+.layout-center-wrapper{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.layout-center-wrapper:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.top-menu {
+	float: left;
+	width: 780px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top-menu li {
+	display: inline-block;
+}
+.top-menu a {
+	display: block;
+	padding: 30px 20px;
+	margin-right: -0.22em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.top-menu a:hover {
+	background: #242424;
+}
+.top-menu a.active {
+	box-shadow: 0 25px 0 -20px white;
+}
+.top-menu a.active:hover {
+	background:black;
+}
+.account-menu {
+	float: right;
+	max-width: 140px;
+}
+.account-menu-enter {
+	display: block;
+	position: relative;
+	padding: 30px 0px;
+	padding-left: 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.account-menu-enter:before {
+	content: '';
+	position: absolute;
+	top: 33px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background: url('../img/enter-icon.png') no-repeat 0 0;
+}
+.account-menu-enter-disabled:before {
+	opacity: 0.3;
+}
+.login-popup {
+	display: none;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	width: 320px;
+	min-height: 200px;
+	padding: 50px 70px;
+	margin-left:-230px;
+	background: white;
+}
+.features {
+	margin: 50px 0;
+	padding: 0;
+	list-style: none;
+	color: white;
+}
+.features:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.features li {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	text-align: center;
+}
+.features li:last-child {
+	margin-right: 0;
+}
+.feature-title {
+	position: relative;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 80px;
+}
+.feature-title:after {
+	content: '';
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	margin-left: -15px;
+	width: 30px;
+	height: 30px;
+	background: url('../img/diamond.png')
+}
+.features p {
+	margin: 0 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+/*https://htmlacademy.ru/demos/15#step1*/
