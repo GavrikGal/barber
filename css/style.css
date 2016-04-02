@@ -3,9 +3,10 @@ html, body {
 	padding: 0;
 }
 body {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "PT Sans Narrow", sans-serif;
-	background: black url('../img/body-bg.jpg') no-repeat 50% 0;
+	background: black url('../img/bg-index.jpg') no-repeat 50% 0;
+	background-size: 139%;
 }
 
 .header {
@@ -40,10 +41,11 @@ body {
 }
 .top-menu a {
 	display: block;
-	padding: 30px 20px;
-	margin-right: -0.22em;
+	padding: 26px 20px;
+	margin-right: -0.21em;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bold;
 }
 .top-menu a:hover {
 	background: #242424;
@@ -61,15 +63,17 @@ body {
 .account-menu-enter {
 	display: block;
 	position: relative;
-	padding: 30px 0px;
-	padding-left: 35px;
+	padding: 26px 0px;
+	padding-left: 29px;
+	margin-right: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-weight: bold;
 }
 .account-menu-enter:before {
 	content: '';
 	position: absolute;
-	top: 33px;
+	top: 28px;
 	left: 0;
 	width: 16px;
 	height: 16px;
@@ -178,8 +182,17 @@ body {
     text-decoration: none;
     text-align: right;
 }
+.logo {
+	width: 368px;
+	height: 160px;
+	margin: 57px auto;
+	margin-bottom: 92px
+}
+.logo img{
+	width: 100%;
+}
 .features {
-	margin: 50px 0;
+	margin: 65px 0;
 	padding: 0;
 	list-style: none;
 	color: white;
@@ -221,6 +234,91 @@ body {
 	text-transform: uppercase;
 	line-height: 24px;
 	font-weight: bold;
+}
+.index-section {
+	background: #fdfaf7 url(../img/bg.jpg);
+	margin-bottom: 30px;
+}
+.index-section:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.index-column {
+	position: relative;
+	padding: 45px 80px;
+	width: 50%;
+	box-sizing: border-box;
+}
+.index-column:after{
+	content:'';
+	display: table;
+	clear: both;
+}
+
+.index-left-column {
+	float: left;
+}
+.index-left-column:after {
+	content: '';
+	position: absolute;
+	right: -4px;
+	top: 17%;
+	display: block;
+	width: 8px;
+	height: 280px;
+	background: url('/img/section-line.png')
+}
+.index-right-column {
+	float: right;
+}
+.index-section-title {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 25px
+}
+.index-news {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.index-news a {
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.index-news .date{
+	display: block;
+	font-family: Georgia, Times, serif;
+	font-style: italic;
+	margin-top: 2px;
+	margin-bottom: 27px;
+}
+.index-section .btn {
+	display:inline-block;
+	margin-top: 5px;
+	padding: 13px 34px;
+	color: white;
+	background-color: black;
+	border: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.gallery-items {
+	margin: 32px 0;
+}
+.gallery-items img {
+	width: 100%;
+}
+.gallery-controls .btn-pref {
+	float: left;
+}
+.gallery-controls .btn-next {
+	float: right;
 }
 
 /* стили внутренних страниц*/
@@ -315,4 +413,35 @@ body {
 	font-size: 16px;
 	color: black;
 	background: white;
+}
+
+/* Миллиметровка*/
+.grid{
+	display: none;
+	position: absolute;
+  width:100%;
+  height:200%;
+  background-color: rgba(58, 120, 161, 0.1);
+  background-image:
+    linear-gradient(rgba(131, 171, 196, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(131, 171, 196, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(58, 120, 161, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 120, 161, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(78, 134, 171, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(78, 134, 171, 0.07) 1px, transparent 1px);
+  background-size:
+    100px 100px,
+    100px 100px,
+    10px 10px,
+    10px 10px,
+    20px 20px,
+    20px 20px;
+  background-position:
+    -1px -1px,
+    -1px -1px,
+    -1px -1px,
+    -1px -1px,
+    -1px -1px,
+    -1px -1px;
+	z-index: -10;
 }

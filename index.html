@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+<div class="grid"></div>
 <head>
 	<meta charset="UTF-8">
 	<title>Barber Borodinsky</title>
@@ -14,9 +14,9 @@
 	<div class="header">
 		<div class="layout-center-wrapper">
 			<ul class="top-menu">
-				<li><a href="#">Главная</a>
+				<li><a class="active" href="#">Главная</a>
 				</li>
-				<li><a class="active" href="#">Информация</a>
+				<li><a href="#">Информация</a>
 				</li>
 				<li><a href="#">Новости</a>
 				</li>
@@ -48,7 +48,7 @@
 	</div>
 
 	<div class="layout-center-wrapper">
-		<div class="logo"><a href="#">Barbershop Borodinski</a>
+		<div class="logo"><a href="#"><img src="img/logo.png" alt="Barbershop Borodinski"></a>
 		</div>
 		<ul class="features">
 			<li>
@@ -65,7 +65,7 @@
 			</li>
 		</ul>
 		<div class="index-section">
-			<div class="index-left-column">
+			<div class="index-column index-left-column">
 				<div class="index-section-title">Новости</div>
 				<ul class="index-news">
 					<li>
@@ -79,18 +79,12 @@
 				</ul>
 				<a href="#" class="btn">Все новости</a>
 			</div>
-			<div class="index-right-column">
+			<div class="index-column index-right-column">
 				<div class="index-section-title">Фотогалерея</div>
 				<div class="gallery">
 					<div class="gallery-items">
 						<div class="gallery-item">
-							<img src="" alt="Интерьер">
-						</div>
-						<div class="gallery-item">
-							<img src="" alt="Интерьер">
-						</div>
-						<div class="gallery-item">
-							<img src="" alt="Интерьер">
+							<img src="/img/gallery-item.jpg" alt="Интерьер">
 						</div>
 					</div>
 					<div class="gallery-controls">
@@ -102,7 +96,7 @@
 		</div>
 
 		<div class="index-section">
-			<div class="index-left-column">
+			<div class="index-column index-left-column">
 				<div class="index-section-title">Контактная информация</div>
 				<div class="contacts-address">
 					<p><strong>Barbershop «Borodinski»</strong>
@@ -118,7 +112,7 @@
 				<a href="#" class="btn">Как проехать</a>
 				<a href="#" class="btn">Обратная связь</a>
 			</div>
-			<div class="index-right-column">
+			<div class="index-column index-right-column">
 				<div class="index-section-title">Записаться</div>
 				<form action="#" method="post" class="order-form">
 					<fieldset>
