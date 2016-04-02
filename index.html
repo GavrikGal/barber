@@ -34,7 +34,17 @@
 	</div>
 
 	<div class="login-popup">
-		Здесь будет форма логина
+		<a href="#" class="login-popup-close">✕</a>
+		<form class="login-form" action="/auth" method="post">
+			<input class="login-field" type="text" name="login" placeholder="Логин">
+			<input class="password-field" type="password" name="password" placeholder="Пароль">
+			<a class="restore" href="/restore">Я забыл пароль</a>
+			<label><input type="checkbox" name="remember"> Запомните меня</label>
+			<input type="submit" value="Войти">
+		</form>
+
+<!--		https://htmlacademy.ru/demos/15#step28-->
+
 	</div>
 
 	<div class="layout-center-wrapper">
@@ -146,6 +156,8 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="js/common.js"></script>
 </body>
 
 </html>

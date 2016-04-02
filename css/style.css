@@ -7,6 +7,7 @@ body {
 	font-family: "PT Sans Narrow", sans-serif;
 	background: black url('../img/body-bg.jpg') no-repeat 50% 0;
 }
+
 .header {
 	color: white;
 	background: black;
@@ -78,15 +79,104 @@ body {
 	opacity: 0.3;
 }
 .login-popup {
-	display: none;
+	display:none;
 	position: absolute;
-	top: 120px;
+	top: 40px;
 	left: 50%;
-	width: 320px;
+	width: 300px;
 	min-height: 200px;
-	padding: 50px 70px;
+	padding: 50px 80px;
 	margin-left:-230px;
 	background: white;
+	z-index: 10;
+}
+.login-form {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "PT Sans Narrow", sans-serif;
+	text-transform: uppercase;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	width: 241px;
+	margin-bottom: 10px;
+	padding: 12px 15px;
+	padding-right: 40px;
+	border: 2px solid black;
+	color: black;
+	background-color: #f9f6f3;
+}
+.login-form input[type="password"] {
+	margin-bottom: 15px;
+}
+.login-form .login-field {
+	background:url('/img/icon-user.png') no-repeat 270px 14px;
+}
+.login-form .password-field {
+	background:url('/img/icon-lock.png') no-repeat 270px 14px;
+}
+.login-form .restore {
+	float: right;
+	color: black;
+}
+.login-form input[type="checkbox"] {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.login-form input[type="submit"]{
+	width: 300px;
+	margin-top: 15px;
+	padding: 14px 0;
+	border: none;
+	color: white;
+	background-color: black;
+}
+@-webkit-keyframes login-open {
+    0%   { -webkit-transform: translateY(-2000px); }
+    70%  { -webkit-transform: translateY(30px);    }
+    90%  { -webkit-transform: translateY(-10px);   }
+    100% { -webkit-transform: translateY(0);       }
+}
+@keyframes login-open {
+    0%   { transform: translateY(-2000px); }
+    70%  { transform: translateY(30px);    }
+    90%  { transform: translateY(-10px);   }
+    100% { transform: translateY(0);       }
+}
+@-webkit-keyframes login-error {
+    0%, 100%                { -webkit-transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { -webkit-transform: translateX(10px); }
+}
+@keyframes login-error {
+    0%, 100%                { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+.login-popup-show {
+    display: block;
+    -webkit-animation: login-open 0.4s;
+    animation: login-open 0.4s;
+}
+.login-popup-error {
+    -webkit-animation: login-error 0.6s;
+    animation: login-error 0.6s;
+}
+.login-popup-close {
+    position: absolute;
+    width: 360px;
+    margin-top: -35px;
+    color: #000;
+    text-decoration: none;
+    text-align: right;
 }
 .features {
 	margin: 50px 0;
@@ -133,4 +223,96 @@ body {
 	font-weight: bold;
 }
 
-/*https://htmlacademy.ru/demos/15#step1*/
+/* стили внутренних страниц*/
+.inner-page {
+	background: white;
+}
+.page-title {
+	margin: 3.1em 0;
+	text-transform: uppercase;
+}
+.page-title h1{
+	margin: 0;
+	font-size: 1.875em;
+	line-height: 1.4;
+	font-weight: bold;
+}
+.inner-content {
+	font-size: 0.875em;
+	line-height: 1.7;
+	margin: 3.55em 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.inner-content h1,
+.inner-content h2 {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+.inner-content h1 {
+	font-size: 2.15em;
+	line-height: 1.4;
+}
+.inner-content h2 {
+	font-size: 1.7em;
+	line-height: 1.25;
+}
+.inner-content p {
+	margin: 1em 0;
+}
+.mega-title {
+	margin-top: 3.55em;
+	margin-bottom: 4.5em;
+	text-align: center;
+}
+.mega-title h2 {
+	position: relative;
+	display: inline;
+	font-size: 3.4em;
+	line-height: 1;
+	padding: 0 25px;
+	margin: 0;
+	z-index: 2;
+	background: white;
+}
+.mega-title:after {
+	position:relative;
+	content: '';
+	display: block;
+	border-bottom: 2px solid black;
+	top: -1.7em;
+	z-index: 1;
+}
+.custom-list-1 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.custom-list-1 li {
+	padding-left: 20px;
+	margin-bottom: 1em;
+	background: url('/img/custom-marker-1.png') no-repeat 0 50%;
+}
+.prices {
+	width: 450px;
+	border-collapse: collapse;
+}
+.prices th,
+.prices td {
+	width: 50%;
+	padding: 0.5em 20px;
+	border: 2px solid black;
+}
+.prices th {
+	text-align: left;
+}
+.prices td {
+	text-align: center;
+}
+
+/*Стили магазина*/
+.shop-page {
+	font-size: 16px;
+	color: black;
+	background: white;
+}
