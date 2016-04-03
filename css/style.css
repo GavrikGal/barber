@@ -56,6 +56,10 @@ body {
 .top-menu a.active:hover {
 	background:black;
 }
+.inner-page a.active{
+	background: #242424;
+	box-shadow: 0 25px 0 -20px #e4e4e4;
+}
 .account-menu {
 	float: right;
 	max-width: 140px;
@@ -69,6 +73,9 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
+}
+.account-menu:hover {
+	background: #242424;
 }
 .account-menu-enter:before {
 	content: '';
@@ -226,7 +233,7 @@ body {
 	margin-left: -15px;
 	width: 30px;
 	height: 30px;
-	background: url('../img/diamond.png')
+	background: url('../img/diamond.png');
 }
 .features p {
 	margin: 0 10px;
@@ -267,13 +274,13 @@ body {
 	display: block;
 	width: 8px;
 	height: 280px;
-	background: url('/img/section-line.png')
+	background: url('/img/section-line.png');
 }
 .index-right-column {
 	float: right;
 }
 .index-section-title {
-	font-size: 30px;
+	font-size: 28px;
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 25px
@@ -287,6 +294,7 @@ body {
 	color: black;
 	text-transform: uppercase;
 	text-decoration: none;
+	font-family: "PT Sans Narrow", sans-serif;
 	font-weight: bold;
 	line-height: 1.8em;
 }
@@ -299,14 +307,19 @@ body {
 }
 .index-section .btn {
 	display:inline-block;
+	width: 140px;
 	margin-top: 5px;
-	padding: 13px 34px;
+	padding: 13px 0;
 	color: white;
 	background-color: black;
 	border: 0;
+	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+.index-section .btn:hover {
+	background-color: #242424;
 }
 .gallery-items {
 	margin: 32px 0;
@@ -319,6 +332,145 @@ body {
 }
 .gallery-controls .btn-next {
 	float: right;
+}
+.contacts-address {
+	margin-bottom: 20px;
+}
+.contacts-address p{
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.contacts-work-time {
+	margin-bottom: 30px;
+}
+.index-section p {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1.8em;
+}
+.contacts-work-time + a {
+	float: left;
+}
+
+.contacts-work-time + a + a{
+	float: right;
+}
+.order-form {
+	margin-top: 20px;
+}
+.order-form fieldset {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	border: none;
+}
+.order-form input {
+	font-family: "PT Sans Narrow", sans-serif;
+	background: #fdfaf7;
+}
+.order-form input[type="text"] {
+	padding: 10px 15px;
+	width: 110px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	border: 2px solid black;
+}
+.order-form input[type="text"]:last-child {
+	float: right;
+}
+.order-form input[type="submit"] {
+	margin-top: 13px;
+	width: 100%;
+}
+.footer {
+	margin-top: 40px;
+	background: #242424 url('/img/bg-footer.jpg');
+	padding-top: 40px;
+	color: white;
+	text-transform: uppercase;
+}
+.footer-column {
+	display: inline-block;
+	float: left;
+}
+.footer .contacts-address{
+	width: 260px;
+}
+.footer .social-buttons {
+	float: left;
+	width: 150px;
+	margin-left: 130px;
+	margin-right: auto;
+	text-align: center;
+}
+.footer .copyright {
+	text-align: center;
+	float: right;
+	width: 120px;
+}
+.footer .btn-social
+{
+	display:inline-block;
+	width: 43px;
+	height: 43px;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 0;
+	color: white;
+	background-color: black;
+	border: 0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.footer .btn-social:last-child {
+	margin-right:0;
+}
+.btn-social-vk{
+	background: black url('/img/sprite-social.png') no-repeat 8px 8px;
+}
+.btn-social-fb{
+	background: black url('/img/sprite-social.png') no-repeat -21px 8px;
+}
+.btn-social-inst{
+	background: black url('/img/sprite-social.png') no-repeat -50px 8px;
+}
+.btn-social-vk:hover{
+	background: white url('/img/sprite-social.png') no-repeat 8px -21px;
+}
+.btn-social-fb:hover{
+	background: white url('/img/sprite-social.png') no-repeat -21px -21px;
+}
+.btn-social-inst:hover{
+	background: white url('/img/sprite-social.png') no-repeat -50px -21px;
+}
+
+
+.footer .btn {
+	display:inline-block;
+	width: 120px;
+	margin-top: 5px;
+	padding: 13px 0;
+	color: white;
+	background-color: black;
+	border: 0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.footer .btn:hover {
+	background-color: #ffffff;
+	color: black;
 }
 
 /* стили внутренних страниц*/
